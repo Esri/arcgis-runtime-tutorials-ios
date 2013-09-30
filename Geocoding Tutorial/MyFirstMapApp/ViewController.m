@@ -46,6 +46,8 @@
         
         //Assign a simple renderer to the layer to display results as pushpins
         AGSPictureMarkerSymbol* pushpin = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImageNamed:@"BluePushpin.png"];
+        pushpin.offset = CGPointMake(9,16);
+        pushpin.leaderPoint = CGPointMake(-9, 11);
         AGSSimpleRenderer* renderer = [AGSSimpleRenderer simpleRendererWithSymbol:pushpin];
         self.graphicsLayer.renderer = renderer;
     }else{
