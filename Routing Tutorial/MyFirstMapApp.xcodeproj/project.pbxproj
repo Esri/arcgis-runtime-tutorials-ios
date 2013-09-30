@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		972B641916F7C86C00AF1590 /* MyFirstMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MyFirstMapApp.app; path = GeocodingTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972B641916F7C86C00AF1590 /* RoutingTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972B641D16F7C86C00AF1590 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		972B641F16F7C86C00AF1590 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		972B642116F7C86C00AF1590 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,7 +111,7 @@
 		972B641A16F7C86C00AF1590 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				972B641916F7C86C00AF1590 /* MyFirstMapApp.app */,
+				972B641916F7C86C00AF1590 /* RoutingTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			);
 			name = RoutingTutorial;
 			productName = MyFirstMapApp;
-			productReference = 972B641916F7C86C00AF1590 /* MyFirstMapApp.app */;
+			productReference = 972B641916F7C86C00AF1590 /* RoutingTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -356,6 +356,7 @@
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -367,6 +368,7 @@
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
