@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		972B641E16F7C86C00AF1590 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B641D16F7C86C00AF1590 /* UIKit.framework */; };
+		972B642016F7C86C00AF1590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B641F16F7C86C00AF1590 /* Foundation.framework */; };
+		972B642216F7C86C00AF1590 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B642116F7C86C00AF1590 /* CoreGraphics.framework */; };
+		972B642816F7C86C00AF1590 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 972B642616F7C86C00AF1590 /* InfoPlist.strings */; };
+		972B642A16F7C86C00AF1590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 972B642916F7C86C00AF1590 /* main.m */; };
+		972B642E16F7C86C00AF1590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 972B642D16F7C86C00AF1590 /* AppDelegate.m */; };
+		972B643016F7C86C00AF1590 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B642F16F7C86C00AF1590 /* Default.png */; };
+		972B643216F7C86C00AF1590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B643116F7C86C00AF1590 /* Default@2x.png */; };
+		972B643416F7C86C00AF1590 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B643316F7C86C00AF1590 /* Default-568h@2x.png */; };
+		972B643716F7C86C00AF1590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972B643616F7C86C00AF1590 /* ViewController.m */; };
+		972B643A16F7C86C00AF1590 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */; };
+		972B643D16F7C86C00AF1590 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */; };
+		972B644416F7CDCB00AF1590 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644316F7CDCB00AF1590 /* CoreLocation.framework */; };
+		972B644616F7CDD400AF1590 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644516F7CDD400AF1590 /* CoreText.framework */; };
+		972B644816F7CDDF00AF1590 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644716F7CDDF00AF1590 /* libc++.dylib */; };
+		972B644A16F7CDE500AF1590 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644916F7CDE500AF1590 /* libz.dylib */; };
+		972B644C16F7CDEC00AF1590 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644B16F7CDEC00AF1590 /* QuartzCore.framework */; };
+		972B644E16F7CDF400AF1590 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644D16F7CDF400AF1590 /* MediaPlayer.framework */; };
+		972B645016F7CDF900AF1590 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644F16F7CDF900AF1590 /* MobileCoreServices.framework */; };
+		972B645216F7CDFF00AF1590 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B645116F7CDFF00AF1590 /* OpenGLES.framework */; };
+		972B645416F7CE0600AF1590 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B645316F7CE0600AF1590 /* Security.framework */; };
+		972B645616F7D1A900AF1590 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 972B645516F7D1A900AF1590 /* ArcGIS.bundle */; };
+		972B646616F7D43B00AF1590 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B646416F7D43B00AF1590 /* icon.png */; };
+		972B646716F7D43B00AF1590 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B646516F7D43B00AF1590 /* icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		972B641916F7C86C00AF1590 /* AddMapTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddMapTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972B641D16F7C86C00AF1590 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		972B641F16F7C86C00AF1590 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		972B642116F7C86C00AF1590 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		972B642516F7C86C00AF1590 /* MyFirstMapApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFirstMapApp-Info.plist"; sourceTree = "<group>"; };
+		972B642716F7C86C00AF1590 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		972B642916F7C86C00AF1590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		972B642B16F7C86C00AF1590 /* MyFirstMapApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFirstMapApp-Prefix.pch"; sourceTree = "<group>"; };
+		972B642C16F7C86C00AF1590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		972B642D16F7C86C00AF1590 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		972B642F16F7C86C00AF1590 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		972B643116F7C86C00AF1590 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		972B643316F7C86C00AF1590 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		972B643516F7C86C00AF1590 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		972B643616F7C86C00AF1590 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		972B643916F7C86C00AF1590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		972B643C16F7C86C00AF1590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		972B644316F7CDCB00AF1590 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		972B644516F7CDD400AF1590 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		972B644716F7CDDF00AF1590 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		972B644916F7CDE500AF1590 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		972B644B16F7CDEC00AF1590 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		972B644D16F7CDF400AF1590 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		972B644F16F7CDF900AF1590 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		972B645116F7CDFF00AF1590 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		972B645316F7CE0600AF1590 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		972B645516F7D1A900AF1590 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = $HOME/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<absolute>"; };
+		972B646416F7D43B00AF1590 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		972B646516F7D43B00AF1590 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		972B641616F7C86C00AF1590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972B645416F7CE0600AF1590 /* Security.framework in Frameworks */,
+				972B645216F7CDFF00AF1590 /* OpenGLES.framework in Frameworks */,
+				972B645016F7CDF900AF1590 /* MobileCoreServices.framework in Frameworks */,
+				972B644E16F7CDF400AF1590 /* MediaPlayer.framework in Frameworks */,
+				972B644C16F7CDEC00AF1590 /* QuartzCore.framework in Frameworks */,
+				972B644A16F7CDE500AF1590 /* libz.dylib in Frameworks */,
+				972B644816F7CDDF00AF1590 /* libc++.dylib in Frameworks */,
+				972B644616F7CDD400AF1590 /* CoreText.framework in Frameworks */,
+				972B644416F7CDCB00AF1590 /* CoreLocation.framework in Frameworks */,
+				972B641E16F7C86C00AF1590 /* UIKit.framework in Frameworks */,
+				972B642016F7C86C00AF1590 /* Foundation.framework in Frameworks */,
+				972B642216F7C86C00AF1590 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		972B640E16F7C86C00AF1590 = {
+			isa = PBXGroup;
+			children = (
+				972B645516F7D1A900AF1590 /* ArcGIS.bundle */,
+				972B642316F7C86C00AF1590 /* MyFirstMapApp */,
+				972B641C16F7C86C00AF1590 /* Frameworks */,
+				972B641A16F7C86C00AF1590 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		972B641A16F7C86C00AF1590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				972B641916F7C86C00AF1590 /* AddMapTutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		972B641C16F7C86C00AF1590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972B645316F7CE0600AF1590 /* Security.framework */,
+				972B645116F7CDFF00AF1590 /* OpenGLES.framework */,
+				972B644F16F7CDF900AF1590 /* MobileCoreServices.framework */,
+				972B644D16F7CDF400AF1590 /* MediaPlayer.framework */,
+				972B644B16F7CDEC00AF1590 /* QuartzCore.framework */,
+				972B644916F7CDE500AF1590 /* libz.dylib */,
+				972B644716F7CDDF00AF1590 /* libc++.dylib */,
+				972B644516F7CDD400AF1590 /* CoreText.framework */,
+				972B644316F7CDCB00AF1590 /* CoreLocation.framework */,
+				972B641D16F7C86C00AF1590 /* UIKit.framework */,
+				972B641F16F7C86C00AF1590 /* Foundation.framework */,
+				972B642116F7C86C00AF1590 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		972B642316F7C86C00AF1590 /* MyFirstMapApp */ = {
+			isa = PBXGroup;
+			children = (
+				972B642C16F7C86C00AF1590 /* AppDelegate.h */,
+				972B642D16F7C86C00AF1590 /* AppDelegate.m */,
+				972B643516F7C86C00AF1590 /* ViewController.h */,
+				972B643616F7C86C00AF1590 /* ViewController.m */,
+				972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */,
+				972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */,
+				972B642416F7C86C00AF1590 /* Supporting Files */,
+			);
+			path = MyFirstMapApp;
+			sourceTree = "<group>";
+		};
+		972B642416F7C86C00AF1590 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				972B646416F7D43B00AF1590 /* icon.png */,
+				972B646516F7D43B00AF1590 /* icon@2x.png */,
+				972B642516F7C86C00AF1590 /* MyFirstMapApp-Info.plist */,
+				972B642616F7C86C00AF1590 /* InfoPlist.strings */,
+				972B642916F7C86C00AF1590 /* main.m */,
+				972B642B16F7C86C00AF1590 /* MyFirstMapApp-Prefix.pch */,
+				972B642F16F7C86C00AF1590 /* Default.png */,
+				972B643116F7C86C00AF1590 /* Default@2x.png */,
+				972B643316F7C86C00AF1590 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		972B641816F7C86C00AF1590 /* BasemapTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 972B644016F7C86C00AF1590 /* Build configuration list for PBXNativeTarget "BasemapTutorial" */;
+			buildPhases = (
+				972B641516F7C86C00AF1590 /* Sources */,
+				972B641616F7C86C00AF1590 /* Frameworks */,
+				972B641716F7C86C00AF1590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasemapTutorial;
+			productName = MyFirstMapApp;
+			productReference = 972B641916F7C86C00AF1590 /* AddMapTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		972B641016F7C86C00AF1590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Esri;
+			};
+			buildConfigurationList = 972B641316F7C86C00AF1590 /* Build configuration list for PBXProject "MyFirstMapApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 972B640E16F7C86C00AF1590;
+			productRefGroup = 972B641A16F7C86C00AF1590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				972B641816F7C86C00AF1590 /* BasemapTutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		972B641716F7C86C00AF1590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972B642816F7C86C00AF1590 /* InfoPlist.strings in Resources */,
+				972B643016F7C86C00AF1590 /* Default.png in Resources */,
+				972B643216F7C86C00AF1590 /* Default@2x.png in Resources */,
+				972B643416F7C86C00AF1590 /* Default-568h@2x.png in Resources */,
+				972B643A16F7C86C00AF1590 /* ViewController_iPhone.xib in Resources */,
+				972B643D16F7C86C00AF1590 /* ViewController_iPad.xib in Resources */,
+				972B645616F7D1A900AF1590 /* ArcGIS.bundle in Resources */,
+				972B646616F7D43B00AF1590 /* icon.png in Resources */,
+				972B646716F7D43B00AF1590 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		972B641516F7C86C00AF1590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972B642A16F7C86C00AF1590 /* main.m in Sources */,
+				972B642E16F7C86C00AF1590 /* AppDelegate.m in Sources */,
+				972B643716F7C86C00AF1590 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		972B642616F7C86C00AF1590 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				972B642716F7C86C00AF1590 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				972B643916F7C86C00AF1590 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				972B643C16F7C86C00AF1590 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		972B643E16F7C86C00AF1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		972B643F16F7C86C00AF1590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		972B644116F7C86C00AF1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
+				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		972B644216F7C86C00AF1590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
+				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		972B641316F7C86C00AF1590 /* Build configuration list for PBXProject "MyFirstMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972B643E16F7C86C00AF1590 /* Debug */,
+				972B643F16F7C86C00AF1590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		972B644016F7C86C00AF1590 /* Build configuration list for PBXNativeTarget "BasemapTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972B644116F7C86C00AF1590 /* Debug */,
+				972B644216F7C86C00AF1590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 972B641016F7C86C00AF1590 /* Project object */;
+}
