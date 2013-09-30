@@ -96,6 +96,9 @@
             self.calloutTemplate = [[AGSCalloutTemplate alloc]init];
             self.calloutTemplate.titleTemplate = @"${Match_addr}";
             self.calloutTemplate.detailTemplate = [NSString stringWithFormat:@"${DisplayY}%@ ${DisplayX}%@", @"\u00b0", @"\u00b0"];
+            
+            //Assign the callout template to the layer so that all graphics within this layer
+            //display their information in the callout in the same manner
             self.graphicsLayer.calloutDelegate = self.calloutTemplate;
         }
 
