@@ -68,8 +68,8 @@
     
     AGSRouteTaskParameters* params = [[AGSRouteTaskParameters alloc] init];
     
-    AGSStopGraphic* firstStop = [AGSStopGraphic graphicWithGeometry:[self.mapView.locationDisplay mapLocation] symbol:nil attributes:nil infoTemplateDelegate:nil];
-    AGSStopGraphic* lastStop = [AGSStopGraphic graphicWithGeometry:destination symbol:nil attributes:nil infoTemplateDelegate:nil];
+    AGSStopGraphic* firstStop = [AGSStopGraphic graphicWithGeometry:[self.mapView.locationDisplay mapLocation] symbol:nil attributes:nil];
+    AGSStopGraphic* lastStop = [AGSStopGraphic graphicWithGeometry:destination symbol:nil attributes:nil ];
     [params setStopsWithFeatures:@[firstStop, lastStop]];
     
     //This returns entire route
@@ -248,6 +248,7 @@
         pushpin.leaderPoint = CGPointMake(-9, 11);
         AGSSimpleRenderer* renderer = [AGSSimpleRenderer simpleRendererWithSymbol:pushpin];
         self.graphicsLayer.renderer = renderer;
+  
     }else{
         //Clear out previous results if we already have a graphics layer
         [self.graphicsLayer removeAllGraphics];
@@ -290,18 +291,20 @@
     }
     else
     {
+        
         //Create a callout template if we haven't done so already
         if(!self.calloutTemplate){
             self.calloutTemplate = [[AGSCalloutTemplate alloc]init];
             self.calloutTemplate.titleTemplate = @"${Match_addr}";
             self.calloutTemplate.detailTemplate = [NSString stringWithFormat:@"${DisplayY}%@ ${DisplayX}%@", @"\u00b0", @"\u00b0"];
+            self.graphicsLayer.calloutDelegate = self.calloutTemplate;
         }
 
+        
         //Add a graphic for each result
         for (AGSLocatorFindResult* result in results) {
             AGSGraphic* graphic = result.graphic;
             //Assign the callout template to each graphic
-            graphic.infoTemplateDelegate = self.calloutTemplate;
             [self.graphicsLayer addGraphic:graphic];
         }
         

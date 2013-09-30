@@ -96,13 +96,12 @@
             self.calloutTemplate = [[AGSCalloutTemplate alloc]init];
             self.calloutTemplate.titleTemplate = @"${Match_addr}";
             self.calloutTemplate.detailTemplate = [NSString stringWithFormat:@"${DisplayY}%@ ${DisplayX}%@", @"\u00b0", @"\u00b0"];
+            self.graphicsLayer.calloutDelegate = self.calloutTemplate;
         }
 
         //Add a graphic for each result
         for (AGSLocatorFindResult* result in results) {
             AGSGraphic* graphic = result.graphic;
-            //Assign the callout template to each graphic
-            graphic.infoTemplateDelegate = self.calloutTemplate;
             [self.graphicsLayer addGraphic:graphic];
         }
         
