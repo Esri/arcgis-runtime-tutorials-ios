@@ -29,7 +29,13 @@
     featureSymbol.size = CGSizeMake(7,7);
     featureSymbol.style = AGSSimpleMarkerSymbolStyleCircle;
     featureSymbol.outline = nil;
-    featureLayer.renderer = [AGSSimpleRenderer simpleRendererWithSymbol:featureSymbol];}
+    featureLayer.renderer = [AGSSimpleRenderer simpleRendererWithSymbol:featureSymbol];
+}
+
+- (BOOL)prefersStatusBarHidden{
+    return YES; //quick win for iOS 7
+}
+
 
 - (void)didReceiveMemoryWarning
 {

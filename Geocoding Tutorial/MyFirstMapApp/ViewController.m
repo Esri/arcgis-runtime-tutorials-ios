@@ -20,6 +20,10 @@
     self.mapView.layerDelegate = self;
 }
 
+- (BOOL)prefersStatusBarHidden{
+    return YES; //quick win for iOS 7
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

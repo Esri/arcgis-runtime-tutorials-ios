@@ -41,6 +41,10 @@
     self.mapView.callout.delegate = self;
 }
 
+- (BOOL)prefersStatusBarHidden{
+    return YES; //quick win for iOS 7
+}
+
 #pragma mark - AGSMapViewLayerDelegate methods
 - (void)mapViewDidLoad:(AGSMapView *) mapView {
     //do something now that the map is loaded
