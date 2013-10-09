@@ -332,7 +332,6 @@
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -344,7 +343,6 @@
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
