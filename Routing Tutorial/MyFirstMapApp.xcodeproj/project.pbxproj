@@ -348,6 +348,7 @@
 		972B644116F7C86C00AF1590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
@@ -359,6 +360,7 @@
 		972B644216F7C86C00AF1590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
