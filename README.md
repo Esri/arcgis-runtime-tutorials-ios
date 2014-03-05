@@ -8,8 +8,8 @@ This repo contains code described in the iOS tutorials at http://developers.arcg
 
 ## Requirements
 * XCode 5 (or higher)
-* iOS 6 SDK (or higher)
-* ArcGIS Runtime SDK for iOS 10.2
+* iOS 7 SDK (or higher)
+* [ArcGIS Runtime SDK for iOS 10.2](https://developers.arcgis.com/en/ios/) (Requires ArcGIS for Developers account; free to sign up)
 
 ## Resources
 
