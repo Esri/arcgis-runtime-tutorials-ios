@@ -7,9 +7,9 @@ This repo contains code described in the iOS tutorials at http://developers.arcg
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ## Requirements
-* XCode 4.5 (or higher)
-* iOS 5 SDK (or higher)
-* ArcGIS Runtime SDK for iOS 10.1.1
+* XCode 5 (or higher)
+* iOS 6 SDK (or higher)
+* ArcGIS Runtime SDK for iOS 10.2
 
 ## Resources
 
