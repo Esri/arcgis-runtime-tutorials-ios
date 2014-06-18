@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Iuj-J1-eEc">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2Rh-ko-mTb">
+            <objects>
+                <viewController id="Iuj-J1-eEc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="prS-Jh-jdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ntq-zP-Psy"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WCQ-1G-DTy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M79-PK-8E6" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wno-sH-qqP">
+                                <rect key="frame" x="20" y="39" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Gray"/>
+                                    <segment title="Oceans"/>
+                                    <segment title="Nat. Geo."/>
+                                    <segment title="Topo"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <color key="tintColor" red="0.91183424000000002" green="0.65939901580000004" blue="0.1542916074" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="basemapChanged:" destination="Iuj-J1-eEc" eventType="valueChanged" id="gHm-0I-7DC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M79-PK-8E6" firstAttribute="width" secondItem="WCQ-1G-DTy" secondAttribute="width" id="13M-2A-9Af"/>
+                            <constraint firstItem="Wno-sH-qqP" firstAttribute="width" relation="lessThanOrEqual" secondItem="WCQ-1G-DTy" secondAttribute="width" constant="-40" id="3Sx-dE-i2X"/>
+                            <constraint firstAttribute="centerX" secondItem="M79-PK-8E6" secondAttribute="centerX" id="4ge-Cb-Spy"/>
+                            <constraint firstItem="M79-PK-8E6" firstAttribute="height" secondItem="WCQ-1G-DTy" secondAttribute="height" id="QgV-1j-5fA"/>
+                            <constraint firstAttribute="centerX" secondItem="Wno-sH-qqP" secondAttribute="centerX" id="TW2-Kk-lp9"/>
+                            <constraint firstAttribute="centerY" secondItem="M79-PK-8E6" secondAttribute="centerY" id="hbz-td-Stf"/>
+                            <constraint firstItem="Wno-sH-qqP" firstAttribute="top" secondItem="prS-Jh-jdk" secondAttribute="bottom" constant="19" id="wEV-7C-NOq"/>
+                        </constraints>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="M79-PK-8E6" id="bkc-NL-gAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceG-QR-96A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="38"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
