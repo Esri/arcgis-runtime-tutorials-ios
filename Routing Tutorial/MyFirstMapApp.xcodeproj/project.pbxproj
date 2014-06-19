@@ -17,8 +17,6 @@
 		972B643216F7C86C00AF1590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B643116F7C86C00AF1590 /* Default@2x.png */; };
 		972B643416F7C86C00AF1590 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B643316F7C86C00AF1590 /* Default-568h@2x.png */; };
 		972B643716F7C86C00AF1590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972B643616F7C86C00AF1590 /* ViewController.m */; };
-		972B643A16F7C86C00AF1590 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */; };
-		972B643D16F7C86C00AF1590 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */; };
 		972B644416F7CDCB00AF1590 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644316F7CDCB00AF1590 /* CoreLocation.framework */; };
 		972B644616F7CDD400AF1590 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644516F7CDD400AF1590 /* CoreText.framework */; };
 		972B644816F7CDDF00AF1590 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B644716F7CDDF00AF1590 /* libc++.dylib */; };
@@ -36,6 +34,8 @@
 		972B648C16F7FC5600AF1590 /* next32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B648816F7FC5600AF1590 /* next32@2x.png */; };
 		972B648D16F7FC5600AF1590 /* prev32.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B648916F7FC5600AF1590 /* prev32.png */; };
 		972B648E16F7FC5600AF1590 /* prev32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 972B648A16F7FC5600AF1590 /* prev32@2x.png */; };
+		97981FCB195261140048645F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97981FCA195261140048645F /* Main_iPad.storyboard */; };
+		97981FCD195261220048645F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97981FCC195261220048645F /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,6 @@
 		972B643316F7C86C00AF1590 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		972B643516F7C86C00AF1590 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		972B643616F7C86C00AF1590 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		972B643916F7C86C00AF1590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		972B643C16F7C86C00AF1590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		972B644316F7CDCB00AF1590 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		972B644516F7CDD400AF1590 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		972B644716F7CDDF00AF1590 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -73,6 +71,8 @@
 		972B648816F7FC5600AF1590 /* next32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next32@2x.png"; sourceTree = "<group>"; };
 		972B648916F7FC5600AF1590 /* prev32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev32.png; sourceTree = "<group>"; };
 		972B648A16F7FC5600AF1590 /* prev32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev32@2x.png"; sourceTree = "<group>"; };
+		97981FCA195261140048645F /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		97981FCC195261220048645F /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 				972B642D16F7C86C00AF1590 /* AppDelegate.m */,
 				972B643516F7C86C00AF1590 /* ViewController.h */,
 				972B643616F7C86C00AF1590 /* ViewController.m */,
-				972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */,
-				972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */,
+				97981FCA195261140048645F /* Main_iPad.storyboard */,
+				97981FCC195261220048645F /* Main_iPhone.storyboard */,
 				972B642416F7C86C00AF1590 /* Supporting Files */,
 			);
 			path = MyFirstMapApp;
@@ -221,12 +221,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97981FCB195261140048645F /* Main_iPad.storyboard in Resources */,
 				972B642816F7C86C00AF1590 /* InfoPlist.strings in Resources */,
 				972B643016F7C86C00AF1590 /* Default.png in Resources */,
 				972B643216F7C86C00AF1590 /* Default@2x.png in Resources */,
+				97981FCD195261220048645F /* Main_iPhone.storyboard in Resources */,
 				972B643416F7C86C00AF1590 /* Default-568h@2x.png in Resources */,
-				972B643A16F7C86C00AF1590 /* ViewController_iPhone.xib in Resources */,
-				972B643D16F7C86C00AF1590 /* ViewController_iPad.xib in Resources */,
 				972B645616F7D1A900AF1590 /* ArcGIS.bundle in Resources */,
 				972B646616F7D43B00AF1590 /* icon.png in Resources */,
 				972B646716F7D43B00AF1590 /* icon@2x.png in Resources */,
@@ -262,22 +262,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		972B643816F7C86C00AF1590 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				972B643916F7C86C00AF1590 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		972B643B16F7C86C00AF1590 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				972B643C16F7C86C00AF1590 /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -305,7 +289,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -348,7 +331,6 @@
 		972B644116F7C86C00AF1590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";
@@ -360,7 +342,6 @@
 		972B644216F7C86C00AF1590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFirstMapApp/MyFirstMapApp-Prefix.pch";
 				INFOPLIST_FILE = "MyFirstMapApp/MyFirstMapApp-Info.plist";

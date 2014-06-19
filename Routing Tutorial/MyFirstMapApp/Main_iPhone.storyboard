@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JhP-wa-XIf">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FNP-Ui-88j">
+            <objects>
+                <viewController id="JhP-wa-XIf" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HND-lV-gvT"/>
+                        <viewControllerLayoutGuide type="bottom" id="3eN-E2-sNs"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mLo-Oo-nBS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" barStyle="blackTranslucent" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5S9-1M-y5u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.73999999999999999" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6lV-0P-A2a"/>
+                                </constraints>
+                                <color key="tintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="JhP-wa-XIf" id="VHB-jd-dHt"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNF-Qt-dAB" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="75" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-su-fpO">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YeW-R0-cI0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="mPs-yL-QZJ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" image="prev32.png" width="6" style="plain" id="EpQ-Wj-rv0" userLabel="Prev Btn">
+                                        <connections>
+                                            <action selector="prevBtnClicked:" destination="JhP-wa-XIf" id="SZ5-lG-efx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vSq-vM-wcq"/>
+                                    <barButtonItem enabled="NO" image="next32.png" width="35" style="plain" id="rRb-Tg-Wor" userLabel="Next Btn">
+                                        <connections>
+                                            <action selector="nextBtnClicked:" destination="JhP-wa-XIf" id="MDW-Oa-hiD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sZ6-ae-QYG" userLabel="Directions Label">
+                                <rect key="frame" x="160" y="583" width="0.0" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5S9-1M-y5u" firstAttribute="top" secondItem="mLo-Oo-nBS" secondAttribute="top" id="1ut-Mb-OOd"/>
+                            <constraint firstItem="3fE-su-fpO" firstAttribute="centerX" secondItem="sZ6-ae-QYG" secondAttribute="centerX" id="7d7-bT-FRC"/>
+                            <constraint firstItem="5S9-1M-y5u" firstAttribute="width" secondItem="mLo-Oo-nBS" secondAttribute="width" id="Aa0-dC-YDj"/>
+                            <constraint firstItem="pNF-Qt-dAB" firstAttribute="bottom" secondItem="3fE-su-fpO" secondAttribute="top" id="PSH-4L-xNo"/>
+                            <constraint firstItem="3fE-su-fpO" firstAttribute="height" secondItem="sZ6-ae-QYG" secondAttribute="height" id="Vau-Bg-RiX"/>
+                            <constraint firstItem="3fE-su-fpO" firstAttribute="centerY" secondItem="sZ6-ae-QYG" secondAttribute="centerY" constant="-59" id="YuZ-Iy-q3A"/>
+                            <constraint firstItem="3fE-su-fpO" firstAttribute="leading" secondItem="mLo-Oo-nBS" secondAttribute="leading" id="awv-t3-5CZ"/>
+                            <constraint firstItem="pNF-Qt-dAB" firstAttribute="top" secondItem="5S9-1M-y5u" secondAttribute="bottom" id="cGN-Ad-2Tc"/>
+                            <constraint firstAttribute="centerX" secondItem="pNF-Qt-dAB" secondAttribute="centerX" id="ccg-hz-cwK"/>
+                            <constraint firstItem="3eN-E2-sNs" firstAttribute="top" secondItem="3fE-su-fpO" secondAttribute="bottom" id="mTz-2k-ajV"/>
+                            <constraint firstAttribute="width" secondItem="3fE-su-fpO" secondAttribute="width" id="q6L-e9-yJ9"/>
+                            <constraint firstItem="pNF-Qt-dAB" firstAttribute="width" secondItem="mLo-Oo-nBS" secondAttribute="width" id="tPz-NB-d1q"/>
+                            <constraint firstItem="5S9-1M-y5u" firstAttribute="leading" secondItem="mLo-Oo-nBS" secondAttribute="leading" id="wdU-zH-wTR"/>
+                        </constraints>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <connections>
+                        <outlet property="directionsLabel" destination="sZ6-ae-QYG" id="V4G-GD-iHs"/>
+                        <outlet property="mapView" destination="pNF-Qt-dAB" id="fDN-Au-OYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3E-OT-W6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next32.png" width="32" height="32"/>
+        <image name="prev32.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
