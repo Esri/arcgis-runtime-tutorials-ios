@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gJv-vU-vvu">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uLJ-7v-2aM">
+            <objects>
+                <viewController id="gJv-vU-vvu" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TKp-fl-T6G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bmk-lL-4eU"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dTt-6G-88m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOz-Bi-HSL" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" barStyle="blackTranslucent" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ox-87-Kft">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.73999999999999999" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="9He-LY-xyW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="gJv-vU-vvu" id="a8i-Us-RQP"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gOz-Bi-HSL" firstAttribute="width" secondItem="dTt-6G-88m" secondAttribute="width" id="Ehu-Ig-NUR"/>
+                            <constraint firstAttribute="centerX" secondItem="gOz-Bi-HSL" secondAttribute="centerX" id="NKo-Y5-f8v"/>
+                            <constraint firstAttribute="centerY" secondItem="gOz-Bi-HSL" secondAttribute="centerY" id="QRc-HU-GlX"/>
+                            <constraint firstItem="9Ox-87-Kft" firstAttribute="top" secondItem="gOz-Bi-HSL" secondAttribute="top" id="c8g-9c-ca1"/>
+                            <constraint firstAttribute="centerX" secondItem="9Ox-87-Kft" secondAttribute="centerX" id="eqb-vi-QWV"/>
+                            <constraint firstItem="9Ox-87-Kft" firstAttribute="width" secondItem="dTt-6G-88m" secondAttribute="width" id="izv-Tc-UVe"/>
+                            <constraint firstItem="gOz-Bi-HSL" firstAttribute="height" secondItem="dTt-6G-88m" secondAttribute="height" id="sqE-Td-Yhj"/>
+                        </constraints>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="gOz-Bi-HSL" id="k2d-l4-4fR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fz7-kV-vGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="-33"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
