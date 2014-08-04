@@ -84,7 +84,6 @@
     
     //add new layer
     AGSTiledMapServiceLayer* newBasemapLayer = [AGSTiledMapServiceLayer tiledMapServiceLayerWithURL:basemapURL];
-    newBasemapLayer.name = @"Basemap Tiled Layer";
-    [self.mapView insertMapLayer:newBasemapLayer atIndex:0];
+    [self.mapView insertMapLayer:newBasemapLayer withName:@"Basemap Tiled Layer"  atIndex:0];
 }
 @end

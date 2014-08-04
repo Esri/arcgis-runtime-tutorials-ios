@@ -276,7 +276,6 @@
     params.text = searchBar.text;
     params.outFields = @[@"*"];
     params.outSpatialReference = self.mapView.spatialReference;
-    params.location = [AGSPoint pointWithX:0 y:0 spatialReference:nil];
     
     //Kick off the geocoding operation.
     //This will invoke the geocode service on a background thread.
