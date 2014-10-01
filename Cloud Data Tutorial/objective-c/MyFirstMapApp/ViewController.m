@@ -18,6 +18,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -74,15 +75,24 @@
         self.countries = @[@"None",@"US",@"Canada",@"France",@"Australia",@"Brazil"];
     }
     
-    UIActionSheet* pickerSheet = [[UIActionSheet alloc]initWithFrame:CGRectMake(0, 0, 320, 410)];
-    [pickerSheet showInView:self.view];
-    [pickerSheet setBounds:CGRectMake(0, 0, 320, 410)];
-    
-    UIPickerView* countryPicker = [[UIPickerView alloc]initWithFrame:pickerSheet.bounds];
-    countryPicker.delegate = self;
-    countryPicker.dataSource = self;
-    countryPicker.showsSelectionIndicator  = YES;
-    [pickerSheet addSubview:countryPicker];
+    if(self.countryPicker==nil){
+        self.countryPicker = [[UIPickerView alloc]init];
+        self.countryPicker.delegate = self;
+        self.countryPicker.dataSource = self;
+        self.countryPicker.showsSelectionIndicator  = YES;
+        self.countryPicker.backgroundColor = [UIColor whiteColor];
+        
+        [self.view addSubview:self.countryPicker];
+        
+        self.countryPicker.translatesAutoresizingMaskIntoConstraints = NO;
+        //add auto-layout constraints to properly position the picker
+        NSMutableDictionary* views = [[NSMutableDictionary alloc]init];
+        [views setObject:self.countryPicker forKey:@"countryPicker"];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[countryPicker]|" options:nil metrics:nil views:views]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[countryPicker]|" options:nil metrics:nil views:views]];
+    }
+    self.countryPicker.hidden = NO;
+
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -131,12 +141,11 @@
     {
         // SELECT DATA WITH WHERE CLAUSE
         AGSQuery *selectQuery = [AGSQuery query];
-        selectQuery.where = [NSString stringWithFormat:@"COUNTRY = '%@'", countryName];
+        selectQuery.whereClause = [NSString stringWithFormat:@"COUNTRY = '%@'", countryName];
         [featureLayer selectFeaturesWithQuery:selectQuery selectionMethod:AGSFeatureLayerSelectionMethodNew];
     }
     
-    UIActionSheet* pickerSheet = (UIActionSheet*) pickerView.superview;
-    [pickerSheet dismissWithClickedButtonIndex:0 animated:YES];
+    self.countryPicker.hidden = YES;
 }
 
 -(void)featureLayer:(AGSFeatureLayer *)featureLayer operation:(NSOperation *)op didSelectFeaturesWithFeatureSet:(AGSFeatureSet *)featureSet
