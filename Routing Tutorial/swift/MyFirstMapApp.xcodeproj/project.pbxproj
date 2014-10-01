@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E2DC604198AE7CF00F60CE6 /* BluePushpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2DC603198AE7CF00F60CE6 /* BluePushpin.png */; };
+		3E7D1F42198948C900E7E527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D1F41198948C900E7E527 /* AppDelegate.swift */; };
+		3E7D1F44198948C900E7E527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D1F43198948C900E7E527 /* ViewController.swift */; };
+		3E7D1F47198948C900E7E527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F45198948C900E7E527 /* Main.storyboard */; };
+		3E7D1F49198948C900E7E527 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F48198948C900E7E527 /* Images.xcassets */; };
+		3E7D1F55198948C900E7E527 /* MyFirstMapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */; };
+		3E7D1F5F19896A1700E7E527 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F5E19896A1700E7E527 /* ArcGIS.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E7D1F4F198948C900E7E527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7D1F34198948C900E7E527 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7D1F3B198948C900E7E527;
+			remoteInfo = MyFirstMapApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E2DC603198AE7CF00F60CE6 /* BluePushpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePushpin.png; sourceTree = "<group>"; };
+		3E7D1F3C198948C900E7E527 /* RoutingSwiftTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingSwiftTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7D1F40198948C900E7E527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7D1F41198948C900E7E527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E7D1F43198948C900E7E527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E7D1F46198948C900E7E527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E7D1F48198948C900E7E527 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstMapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7D1F53198948C900E7E527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstMapAppTests.swift; sourceTree = "<group>"; };
+		3E7D1F5E19896A1700E7E527 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = $HOME/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7D1F39198948C900E7E527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7D1F4B198948C900E7E527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7D1F33198948C900E7E527 = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F3E198948C900E7E527 /* MyFirstMapApp */,
+				3E7D1F51198948C900E7E527 /* MyFirstMapAppTests */,
+				3E7D1F3D198948C900E7E527 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E7D1F3D198948C900E7E527 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F3C198948C900E7E527 /* RoutingSwiftTutorial.app */,
+				3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E7D1F3E198948C900E7E527 /* MyFirstMapApp */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F41198948C900E7E527 /* AppDelegate.swift */,
+				3E7D1F43198948C900E7E527 /* ViewController.swift */,
+				3E7D1F45198948C900E7E527 /* Main.storyboard */,
+				3E7D1F48198948C900E7E527 /* Images.xcassets */,
+				3E7D1F3F198948C900E7E527 /* Supporting Files */,
+			);
+			path = MyFirstMapApp;
+			sourceTree = "<group>";
+		};
+		3E7D1F3F198948C900E7E527 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F5E19896A1700E7E527 /* ArcGIS.bundle */,
+				3E2DC603198AE7CF00F60CE6 /* BluePushpin.png */,
+				3E7D1F40198948C900E7E527 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E7D1F51198948C900E7E527 /* MyFirstMapAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */,
+				3E7D1F52198948C900E7E527 /* Supporting Files */,
+			);
+			path = MyFirstMapAppTests;
+			sourceTree = "<group>";
+		};
+		3E7D1F52198948C900E7E527 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D1F53198948C900E7E527 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E7D1F3B198948C900E7E527 /* MyFirstMapApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7D1F58198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapApp" */;
+			buildPhases = (
+				3E7D1F38198948C900E7E527 /* Sources */,
+				3E7D1F39198948C900E7E527 /* Frameworks */,
+				3E7D1F3A198948C900E7E527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstMapApp;
+			productName = MyFirstMapApp;
+			productReference = 3E7D1F3C198948C900E7E527 /* RoutingSwiftTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E7D1F4D198948C900E7E527 /* MyFirstMapAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7D1F5B198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */;
+			buildPhases = (
+				3E7D1F4A198948C900E7E527 /* Sources */,
+				3E7D1F4B198948C900E7E527 /* Frameworks */,
+				3E7D1F4C198948C900E7E527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7D1F50198948C900E7E527 /* PBXTargetDependency */,
+			);
+			name = MyFirstMapAppTests;
+			productName = MyFirstMapAppTests;
+			productReference = 3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E7D1F34198948C900E7E527 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Esri;
+				TargetAttributes = {
+					3E7D1F3B198948C900E7E527 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3E7D1F4D198948C900E7E527 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3E7D1F3B198948C900E7E527;
+					};
+				};
+			};
+			buildConfigurationList = 3E7D1F37198948C900E7E527 /* Build configuration list for PBXProject "MyFirstMapApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E7D1F33198948C900E7E527;
+			productRefGroup = 3E7D1F3D198948C900E7E527 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E7D1F3B198948C900E7E527 /* MyFirstMapApp */,
+				3E7D1F4D198948C900E7E527 /* MyFirstMapAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E7D1F3A198948C900E7E527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7D1F5F19896A1700E7E527 /* ArcGIS.bundle in Resources */,
+				3E2DC604198AE7CF00F60CE6 /* BluePushpin.png in Resources */,
+				3E7D1F47198948C900E7E527 /* Main.storyboard in Resources */,
+				3E7D1F49198948C900E7E527 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7D1F4C198948C900E7E527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7D1F38198948C900E7E527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7D1F44198948C900E7E527 /* ViewController.swift in Sources */,
+				3E7D1F42198948C900E7E527 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7D1F4A198948C900E7E527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7D1F55198948C900E7E527 /* MyFirstMapAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E7D1F50198948C900E7E527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7D1F3B198948C900E7E527 /* MyFirstMapApp */;
+			targetProxy = 3E7D1F4F198948C900E7E527 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E7D1F45198948C900E7E527 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E7D1F46198948C900E7E527 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E7D1F56198948C900E7E527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E7D1F57198948C900E7E527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E7D1F59198948C900E7E527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
+				INFOPLIST_FILE = MyFirstMapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_NAME = RoutingSwiftTutorial;
+			};
+			name = Debug;
+		};
+		3E7D1F5A198948C900E7E527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
+				INFOPLIST_FILE = MyFirstMapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_NAME = RoutingSwiftTutorial;
+			};
+			name = Release;
+		};
+		3E7D1F5C198948C900E7E527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3E7D1F5D198948C900E7E527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E7D1F37198948C900E7E527 /* Build configuration list for PBXProject "MyFirstMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7D1F56198948C900E7E527 /* Debug */,
+				3E7D1F57198948C900E7E527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7D1F58198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7D1F59198948C900E7E527 /* Debug */,
+				3E7D1F5A198948C900E7E527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7D1F5B198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7D1F5C198948C900E7E527 /* Debug */,
+				3E7D1F5D198948C900E7E527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E7D1F34198948C900E7E527 /* Project object */;
+}
