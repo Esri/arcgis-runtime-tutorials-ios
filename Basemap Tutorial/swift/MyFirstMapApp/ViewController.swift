@@ -57,7 +57,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
     
     @IBAction func basemapChanged(sender: UISegmentedControl) {
         
-        var basemapURL:NSURL
+        var basemapURL:NSURL!
         
         switch sender.selectedSegmentIndex {
             case 0:  //gray
