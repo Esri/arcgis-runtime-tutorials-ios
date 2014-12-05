@@ -12,19 +12,8 @@
 		3E7D1F44198948C900E7E527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D1F43198948C900E7E527 /* ViewController.swift */; };
 		3E7D1F47198948C900E7E527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F45198948C900E7E527 /* Main.storyboard */; };
 		3E7D1F49198948C900E7E527 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F48198948C900E7E527 /* Images.xcassets */; };
-		3E7D1F55198948C900E7E527 /* MyFirstMapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */; };
 		3E7D1F5F19896A1700E7E527 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D1F5E19896A1700E7E527 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3E7D1F4F198948C900E7E527 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E7D1F34198948C900E7E527 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E7D1F3B198948C900E7E527;
-			remoteInfo = MyFirstMapApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E2DC603198AE7CF00F60CE6 /* BluePushpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePushpin.png; sourceTree = "<group>"; };
@@ -34,21 +23,11 @@
 		3E7D1F43198948C900E7E527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E7D1F46198948C900E7E527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E7D1F48198948C900E7E527 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstMapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7D1F53198948C900E7E527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstMapAppTests.swift; sourceTree = "<group>"; };
 		3E7D1F5E19896A1700E7E527 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = $HOME/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E7D1F39198948C900E7E527 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E7D1F4B198948C900E7E527 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				3E7D1F3E198948C900E7E527 /* MyFirstMapApp */,
-				3E7D1F51198948C900E7E527 /* MyFirstMapAppTests */,
 				3E7D1F3D198948C900E7E527 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				3E7D1F3C198948C900E7E527 /* RoutingSwiftTutorial.app */,
-				3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,23 +75,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3E7D1F51198948C900E7E527 /* MyFirstMapAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				3E7D1F54198948C900E7E527 /* MyFirstMapAppTests.swift */,
-				3E7D1F52198948C900E7E527 /* Supporting Files */,
-			);
-			path = MyFirstMapAppTests;
-			sourceTree = "<group>";
-		};
-		3E7D1F52198948C900E7E527 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E7D1F53198948C900E7E527 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,24 +95,6 @@
 			productReference = 3E7D1F3C198948C900E7E527 /* RoutingSwiftTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E7D1F4D198948C900E7E527 /* MyFirstMapAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E7D1F5B198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */;
-			buildPhases = (
-				3E7D1F4A198948C900E7E527 /* Sources */,
-				3E7D1F4B198948C900E7E527 /* Frameworks */,
-				3E7D1F4C198948C900E7E527 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E7D1F50198948C900E7E527 /* PBXTargetDependency */,
-			);
-			name = MyFirstMapAppTests;
-			productName = MyFirstMapAppTests;
-			productReference = 3E7D1F4E198948C900E7E527 /* MyFirstMapAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +106,6 @@
 				TargetAttributes = {
 					3E7D1F3B198948C900E7E527 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					3E7D1F4D198948C900E7E527 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 3E7D1F3B198948C900E7E527;
 					};
 				};
 			};
@@ -185,7 +123,6 @@
 			projectRoot = "";
 			targets = (
 				3E7D1F3B198948C900E7E527 /* MyFirstMapApp */,
-				3E7D1F4D198948C900E7E527 /* MyFirstMapAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +139,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E7D1F4C198948C900E7E527 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,23 +151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E7D1F4A198948C900E7E527 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E7D1F55198948C900E7E527 /* MyFirstMapAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E7D1F50198948C900E7E527 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E7D1F3B198948C900E7E527 /* MyFirstMapApp */;
-			targetProxy = 3E7D1F4F198948C900E7E527 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3E7D1F45198948C900E7E527 /* Main.storyboard */ = {
@@ -370,40 +284,6 @@
 			};
 			name = Release;
 		};
-		3E7D1F5C198948C900E7E527 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		3E7D1F5D198948C900E7E527 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,15 +301,6 @@
 			buildConfigurations = (
 				3E7D1F59198948C900E7E527 /* Debug */,
 				3E7D1F5A198948C900E7E527 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E7D1F5B198948C900E7E527 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E7D1F5C198948C900E7E527 /* Debug */,
-				3E7D1F5D198948C900E7E527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

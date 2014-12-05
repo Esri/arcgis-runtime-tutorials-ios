@@ -12,18 +12,7 @@
 		3EA4C34219898CDC006A2AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4C34119898CDC006A2AA0 /* ViewController.swift */; };
 		3EA4C34519898CDC006A2AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4C34319898CDC006A2AA0 /* Main.storyboard */; };
 		3EA4C34719898CDC006A2AA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4C34619898CDC006A2AA0 /* Images.xcassets */; };
-		3EA4C35319898CDC006A2AA0 /* MyFirstMapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4C35219898CDC006A2AA0 /* MyFirstMapAppTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3EA4C34D19898CDC006A2AA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3EA4C33219898CDC006A2AA0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3EA4C33919898CDC006A2AA0;
-			remoteInfo = MyFirstMapApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E83AC9C19899ABF0048331B /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = $HOME/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<absolute>"; };
@@ -33,20 +22,10 @@
 		3EA4C34119898CDC006A2AA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EA4C34419898CDC006A2AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EA4C34619898CDC006A2AA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3EA4C34C19898CDC006A2AA0 /* MyFirstMapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstMapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EA4C35119898CDC006A2AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EA4C35219898CDC006A2AA0 /* MyFirstMapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstMapAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3EA4C33719898CDC006A2AA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3EA4C34919898CDC006A2AA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				3EA4C33C19898CDC006A2AA0 /* MyFirstMapApp */,
-				3EA4C34F19898CDC006A2AA0 /* MyFirstMapAppTests */,
 				3EA4C33B19898CDC006A2AA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				3EA4C33A19898CDC006A2AA0 /* BasemapSwiftTutorial.app */,
-				3EA4C34C19898CDC006A2AA0 /* MyFirstMapAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,23 +72,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3EA4C34F19898CDC006A2AA0 /* MyFirstMapAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				3EA4C35219898CDC006A2AA0 /* MyFirstMapAppTests.swift */,
-				3EA4C35019898CDC006A2AA0 /* Supporting Files */,
-			);
-			path = MyFirstMapAppTests;
-			sourceTree = "<group>";
-		};
-		3EA4C35019898CDC006A2AA0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3EA4C35119898CDC006A2AA0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,24 +92,6 @@
 			productReference = 3EA4C33A19898CDC006A2AA0 /* BasemapSwiftTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3EA4C34B19898CDC006A2AA0 /* MyFirstMapAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3EA4C35919898CDC006A2AA0 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */;
-			buildPhases = (
-				3EA4C34819898CDC006A2AA0 /* Sources */,
-				3EA4C34919898CDC006A2AA0 /* Frameworks */,
-				3EA4C34A19898CDC006A2AA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3EA4C34E19898CDC006A2AA0 /* PBXTargetDependency */,
-			);
-			name = MyFirstMapAppTests;
-			productName = MyFirstMapAppTests;
-			productReference = 3EA4C34C19898CDC006A2AA0 /* MyFirstMapAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +103,6 @@
 				TargetAttributes = {
 					3EA4C33919898CDC006A2AA0 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					3EA4C34B19898CDC006A2AA0 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 3EA4C33919898CDC006A2AA0;
 					};
 				};
 			};
@@ -182,7 +120,6 @@
 			projectRoot = "";
 			targets = (
 				3EA4C33919898CDC006A2AA0 /* MyFirstMapApp */,
-				3EA4C34B19898CDC006A2AA0 /* MyFirstMapAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +135,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EA4C34A19898CDC006A2AA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EA4C34819898CDC006A2AA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EA4C35319898CDC006A2AA0 /* MyFirstMapAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3EA4C34E19898CDC006A2AA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3EA4C33919898CDC006A2AA0 /* MyFirstMapApp */;
-			targetProxy = 3EA4C34D19898CDC006A2AA0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3EA4C34319898CDC006A2AA0 /* Main.storyboard */ = {
@@ -366,40 +280,6 @@
 			};
 			name = Release;
 		};
-		3EA4C35A19898CDC006A2AA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		3EA4C35B19898CDC006A2AA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFirstMapApp.app/MyFirstMapApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyFirstMapAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,15 +297,6 @@
 			buildConfigurations = (
 				3EA4C35719898CDC006A2AA0 /* Debug */,
 				3EA4C35819898CDC006A2AA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3EA4C35919898CDC006A2AA0 /* Build configuration list for PBXNativeTarget "MyFirstMapAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3EA4C35A19898CDC006A2AA0 /* Debug */,
-				3EA4C35B19898CDC006A2AA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
