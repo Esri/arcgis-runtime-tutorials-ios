@@ -68,7 +68,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
     
     //MARK: search bar delegate methods
     
-    func searchBarSearchButtonClicked(searchBar: UISearchBar!) {
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         //Hide the keyboard
         searchBar.resignFirstResponder()
         
@@ -130,13 +130,13 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
             }
             
             //Add a graphic for each result
-            for result in results as [AGSLocatorFindResult] {
+            for result in results as! [AGSLocatorFindResult] {
                 let graphic = result.graphic
                 self.graphicLayer.addGraphic(graphic)
             }
             
             //Zoom in to the results
-            let extent = self.graphicLayer.fullEnvelope.mutableCopy() as AGSMutableEnvelope
+            let extent = self.graphicLayer.fullEnvelope.mutableCopy() as! AGSMutableEnvelope
             extent.expandByFactor(1.5)
             self.mapView.zoomToEnvelope(extent, animated: true)
         }
@@ -149,7 +149,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
     //MARK: AGSCalloutDelegate methods
     
     func didClickAccessoryButtonForCallout(callout: AGSCallout!) {
-        let graphic = callout.representedObject as AGSGraphic
+        let graphic = callout.representedObject as! AGSGraphic
         let destinationLocation = graphic.geometry
         
         self.routeTo(destinationLocation)
@@ -157,7 +157,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
     
     func routeTo(destination:AGSGeometry) {
         //update the banner
-        self.directionsLabel.text = "Routing"
+        self.directionsLabel.text = "Routing..."
         
         if self.routeTask == nil {
             self.routeTask = AGSRouteTask(URL: NSURL(string: "http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Network/USA/NAServer/Route"))
@@ -237,7 +237,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
     @IBAction func prevBtnClicked(sender: AnyObject) {
         var index = 0
         if self.currentDirectionGraphic != nil {
-            if let currentIndex = find(self.routeResult.directions.graphics as [AGSDirectionGraphic], self.currentDirectionGraphic) {
+            if let currentIndex = find(self.routeResult.directions.graphics as! [AGSDirectionGraphic], self.currentDirectionGraphic) {
                 index = currentIndex - 1
             }
         }
@@ -247,7 +247,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
     @IBAction func nextBtnClicked(sender: AnyObject) {
         var index = 0
         if self.currentDirectionGraphic != nil {
-            if let currentIndex = find(self.routeResult.directions.graphics as [AGSDirectionGraphic], self.currentDirectionGraphic) {
+            if let currentIndex = find(self.routeResult.directions.graphics as! [AGSDirectionGraphic], self.currentDirectionGraphic) {
                 index = currentIndex + 1
             }
         }
@@ -260,7 +260,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
         
         //get current direction and add it to the graphics layer
         let directions = self.routeResult.directions as AGSDirectionSet
-        self.currentDirectionGraphic = directions.graphics[index] as AGSDirectionGraphic
+        self.currentDirectionGraphic = directions.graphics[index] as! AGSDirectionGraphic
         
         //highlight current manoeuver with a different symbol
         let cs = AGSCompositeSymbol()
@@ -283,7 +283,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
         self.directionsLabel.text = self.currentDirectionGraphic.text
         
         //soom to envelope of the current direction (expanded by a factor of 1.3)
-        let env = self.currentDirectionGraphic.geometry.envelope.mutableCopy() as AGSMutableEnvelope
+        let env = self.currentDirectionGraphic.geometry.envelope.mutableCopy() as! AGSMutableEnvelope
         env.expandByFactor(1.3)
         self.mapView.zoomToEnvelope(env, animated: true)
         

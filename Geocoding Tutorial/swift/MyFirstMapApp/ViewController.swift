@@ -119,12 +119,12 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UISearchBarDele
             }
             
             //Add a graphic for each result
-            for result in results as [AGSLocatorFindResult] {
+            for result in results as! [AGSLocatorFindResult] {
                 self.graphicLayer.addGraphic(result.graphic)
             }
             
             //Zoom in to the results
-            let extent = self.graphicLayer.fullEnvelope.mutableCopy() as AGSMutableEnvelope
+            let extent = self.graphicLayer.fullEnvelope.mutableCopy() as! AGSMutableEnvelope
             extent.expandByFactor(1.5)
             self.mapView.zoomToEnvelope(extent, animated: true)
         }
