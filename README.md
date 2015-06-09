@@ -9,9 +9,17 @@ The ```master``` branch of this repository contains samples configured for the l
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ## Requirements
-* XCode 5 (or higher)
-* iOS 7 SDK (or higher)
-* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) (Requires ArcGIS for Developers account; free to sign up)
+
+[ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) (Requires ArcGIS for Developers account; free to sign up)
+
+For Objective-C :
+  * XCode 5 (or higher)
+  * iOS 7 SDK (or higher)
+
+For Swift : 
+  * XCode 6.3 (or higher)
+  * iOS 8 SDK (or higher)
+
 
 ##Additional Resources
 
