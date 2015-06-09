@@ -106,7 +106,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UIPickerViewDel
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let countryName = self.countries[row]
         
-        let featureLayer = self.mapView.mapLayerForName("CloudData") as AGSFeatureLayer
+        let featureLayer = self.mapView.mapLayerForName("CloudData") as! AGSFeatureLayer
         
         if featureLayer.selectionSymbol == nil {
             //SYMBOLOGY FOR WHERE CLAUSE SELECTION
@@ -143,12 +143,12 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate, UIPickerViewDel
     func featureLayer(featureLayer: AGSFeatureLayer!, operation op: NSOperation!, didSelectFeaturesWithFeatureSet featureSet: AGSFeatureSet!) {
         //ZOOM TO SELECTED DATA
         var env:AGSMutableEnvelope!
-        for selectedFeature in featureSet.features as [AGSGraphic]{
+        for selectedFeature in featureSet.features as! [AGSGraphic]{
             if env != nil {
                 env.unionWithEnvelope(selectedFeature.geometry.envelope)
             }
             else {
-                env = selectedFeature.geometry.envelope.mutableCopy() as AGSMutableEnvelope
+                env = selectedFeature.geometry.envelope.mutableCopy() as! AGSMutableEnvelope
             }
         }
         self.mapView.zoomToGeometry(env, withPadding: 20, animated: true)
