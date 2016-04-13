@@ -61,15 +61,15 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
         
         switch sender.selectedSegmentIndex {
             case 0:  //gray
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer")
+                basemapURL = Router.LightGray.URL
             case 1:  //oceans
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer")
+                basemapURL = Router.Ocean.URL
             case 2:  //nat geo
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer")
+                basemapURL = Router.NatGeo.URL
             case 3:  //topo
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer")
+                basemapURL = Router.Topo.URL
             default:  //sat
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer")
+                basemapURL = Router.Imagery.URL
         }
         
         //remove the existing basemap layer

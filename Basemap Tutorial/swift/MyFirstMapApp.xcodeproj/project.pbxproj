@@ -12,6 +12,7 @@
 		3EA4C34219898CDC006A2AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4C34119898CDC006A2AA0 /* ViewController.swift */; };
 		3EA4C34519898CDC006A2AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4C34319898CDC006A2AA0 /* Main.storyboard */; };
 		3EA4C34719898CDC006A2AA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4C34619898CDC006A2AA0 /* Images.xcassets */; };
+		627431C71CBDEE2D00684B73 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627431C61CBDEE2D00684B73 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3EA4C34119898CDC006A2AA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EA4C34419898CDC006A2AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EA4C34619898CDC006A2AA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		627431C61CBDEE2D00684B73 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA4C33F19898CDC006A2AA0 /* AppDelegate.swift */,
+				627431C61CBDEE2D00684B73 /* Router.swift */,
 				3EA4C34119898CDC006A2AA0 /* ViewController.swift */,
 				3EA4C34319898CDC006A2AA0 /* Main.storyboard */,
 				3EA4C34619898CDC006A2AA0 /* Images.xcassets */,
@@ -98,6 +101,7 @@
 		3EA4C33219898CDC006A2AA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Esri;
 				TargetAttributes = {
@@ -143,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA4C34219898CDC006A2AA0 /* ViewController.swift in Sources */,
+				627431C71CBDEE2D00684B73 /* Router.swift in Sources */,
 				3EA4C34019898CDC006A2AA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
