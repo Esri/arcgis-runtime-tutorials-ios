@@ -17,7 +17,7 @@ limitations under the License.
 import UIKit
 import ArcGIS
 
-class ViewController: UIViewController, AGSMapViewLayerDelegate {
+class ViewController: UIViewController {
                             
     @IBOutlet weak var mapView: AGSMapView!
     
@@ -25,14 +25,11 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Add a basemap tiled layer
-        let url = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer")
-        let tiledLayer = AGSTiledMapServiceLayer(URL: url)
-        self.mapView.addMapLayer(tiledLayer, withName: "Basemap Tiled Layer")
-
+        //Initialize map with Light Gray Canvas basemap
+        self.mapView.map = AGSMap(basemapType: .lightGrayCanvas, latitude: 0, longitude: 0, levelOfDetail: 0)
         
-        //Set the map view's layer delegate
-        self.mapView.layerDelegate = self
+        //Start the location display
+        self.mapView.locationDisplay.start(completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,12 +38,5 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
     }
 
     
-    //MARK: map view layer delegate methods
-    
-    func mapViewDidLoad(mapView: AGSMapView!) {
-        //do something now that the map is loaded
-        //for example, show the current location on the map
-        mapView.locationDisplay.startDataSource()
-    }
 }
 

@@ -19,7 +19,7 @@ import ArcGIS
 
 let kBasemapLayerName = "Basemap Tiled Layer"
 
-class ViewController: UIViewController, AGSMapViewLayerDelegate {
+class ViewController: UIViewController {
                             
     @IBOutlet weak var mapView: AGSMapView!
     
@@ -27,13 +27,11 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Add a basemap tiled layer
-        let url = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer")
-        let tiledLayer = AGSTiledMapServiceLayer(URL: url)
-        self.mapView.addMapLayer(tiledLayer, withName: kBasemapLayerName)
+        //Initialize map with Light Gray Canvas basemap
+        self.mapView.map = AGSMap(basemapType: .lightGrayCanvas, latitude: 0, longitude: 0, levelOfDetail: 0)
         
-        //Set the map view's layer delegate
-        self.mapView.layerDelegate = self
+        //Start the location display
+        self.mapView.locationDisplay.start(completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,43 +39,32 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
-    //MARK: map view layer delegate methods
-    
-    func mapViewDidLoad(mapView: AGSMapView!) {
-        //do something now that the map is loaded
-        //for example, show the current location on the map
-        mapView.locationDisplay.startDataSource()
-    }
     
     //MARK: actions
     
-    @IBAction func basemapChanged(sender: UISegmentedControl) {
+    @IBAction func basemapChanged(_ sender: UISegmentedControl) {
         
-        var basemapURL:NSURL!
+        var basemap:AGSBasemap!
         
         switch sender.selectedSegmentIndex {
             case 0:  //gray
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer")
+                basemap = AGSBasemap.lightGrayCanvas()
             case 1:  //oceans
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer")
+                basemap = AGSBasemap.oceans()
             case 2:  //nat geo
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer")
+                basemap = AGSBasemap.nationalGeographic()
             case 3:  //topo
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer")
+                basemap = AGSBasemap.topographic()
             default:  //sat
-                basemapURL = NSURL(string: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer")
+                basemap = AGSBasemap.imagery()
         }
         
-        //remove the existing basemap layer
-        self.mapView.removeMapLayerWithName(kBasemapLayerName)
-        
-        //add new Layer
-        let newBasemapLayer = AGSTiledMapServiceLayer(URL: basemapURL)
-        self.mapView.insertMapLayer(newBasemapLayer, withName: kBasemapLayerName, atIndex: 0);
+        //Switch the basemap
+        self.mapView.map!.basemap = basemap
     }
 }
 

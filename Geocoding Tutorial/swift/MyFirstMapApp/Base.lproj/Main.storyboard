@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,43 +17,36 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7P-Pj-g6W" customClass="AGSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArcGIS.bundle/esri.png" translatesAutoresizingMaskIntoConstraints="NO" id="R7F-xv-3o3">
-                                        <rect key="frame" x="10" y="558" width="56" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="99b-hd-HMl"/>
-                                            <constraint firstAttribute="width" constant="56" id="GKz-0S-gHg"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BluePushpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-aH-83J">
+                                        <rect key="frame" x="127" y="169" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <searchBar contentMode="redraw" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" translatesAutoresizingMaskIntoConstraints="NO" id="paD-sB-cxH">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="XGU-IC-eHj"/>
-                                        </connections>
-                                    </searchBar>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="paD-sB-cxH" secondAttribute="centerX" id="EiA-sF-ajk"/>
-                                    <constraint firstItem="paD-sB-cxH" firstAttribute="top" secondItem="E7P-Pj-g6W" secondAttribute="top" id="INM-hy-VHH"/>
-                                    <constraint firstAttribute="bottom" secondItem="R7F-xv-3o3" secondAttribute="bottom" constant="10" id="aAU-1B-F7r"/>
-                                    <constraint firstItem="paD-sB-cxH" firstAttribute="width" secondItem="E7P-Pj-g6W" secondAttribute="width" id="wJv-Hn-28N"/>
-                                    <constraint firstItem="R7F-xv-3o3" firstAttribute="leading" secondItem="E7P-Pj-g6W" secondAttribute="leading" constant="10" id="xux-ud-bwy"/>
-                                </constraints>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <searchBar contentMode="redraw" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" translatesAutoresizingMaskIntoConstraints="NO" id="paD-sB-cxH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XGU-IC-eHj"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="E7P-Pj-g6W" secondAttribute="centerX" id="Duo-PS-m5r"/>
-                            <constraint firstAttribute="centerY" secondItem="E7P-Pj-g6W" secondAttribute="centerY" id="NpZ-nZ-ECk"/>
-                            <constraint firstAttribute="width" secondItem="E7P-Pj-g6W" secondAttribute="width" id="QD7-zb-Nfj"/>
-                            <constraint firstAttribute="height" secondItem="E7P-Pj-g6W" secondAttribute="height" id="imE-cV-RyY"/>
+                            <constraint firstItem="E7P-Pj-g6W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYs-6a-wGC"/>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QjB-vl-wTb"/>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S63-Kk-czX"/>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Siy-xn-Lmd"/>
+                            <constraint firstItem="E7P-Pj-g6W" firstAttribute="top" secondItem="paD-sB-cxH" secondAttribute="bottom" id="Y3W-Su-QCL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E7P-Pj-g6W" secondAttribute="bottom" id="hfc-2O-qG5"/>
+                            <constraint firstItem="E7P-Pj-g6W" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="shh-xY-5Xf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,10 +55,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="133"/>
+            <point key="canvasLocation" x="181.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ArcGIS.bundle/esri.png" width="280" height="280"/>
+        <image name="BluePushpin.png" width="36" height="36"/>
     </resources>
 </document>

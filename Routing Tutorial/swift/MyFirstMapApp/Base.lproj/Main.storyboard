@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,77 +18,65 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7P-Pj-g6W" customClass="AGSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArcGIS.bundle/esri.png" translatesAutoresizingMaskIntoConstraints="NO" id="R7F-xv-3o3">
-                                        <rect key="frame" x="10" y="508" width="56" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="99b-hd-HMl"/>
-                                            <constraint firstAttribute="width" constant="56" id="GKz-0S-gHg"/>
-                                        </constraints>
-                                    </imageView>
-                                    <searchBar contentMode="redraw" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" translatesAutoresizingMaskIntoConstraints="NO" id="paD-sB-cxH">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="XGU-IC-eHj"/>
-                                        </connections>
-                                    </searchBar>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-Hl-xJc">
-                                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="Hyo-cf-WcD"/>
-                                        </constraints>
-                                        <items>
-                                            <barButtonItem enabled="NO" image="prev32" id="5EB-hA-TCB" userLabel="Prev Btn">
-                                                <connections>
-                                                    <action selector="prevBtnClicked:" destination="BYZ-38-t0r" id="BXn-Bp-X3H"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="NbP-39-sec"/>
-                                            <barButtonItem enabled="NO" image="next32" id="gTd-z5-TGA" userLabel="Next Btn">
-                                                <connections>
-                                                    <action selector="nextBtnClicked:" destination="BYZ-38-t0r" id="5F6-TO-ecc"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tt-Kh-iQs" userLabel="Directions Label">
-                                        <rect key="frame" x="50" y="568" width="500" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="qbQ-ul-nVc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="SEU-Hl-xJc" firstAttribute="centerY" secondItem="7Tt-Kh-iQs" secondAttribute="centerY" id="3kr-St-xZg"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Tt-Kh-iQs" secondAttribute="trailing" constant="50" id="AX3-tC-aCQ"/>
-                                    <constraint firstItem="7Tt-Kh-iQs" firstAttribute="leading" secondItem="E7P-Pj-g6W" secondAttribute="leading" constant="50" id="BWB-eq-reQ"/>
-                                    <constraint firstAttribute="centerX" secondItem="paD-sB-cxH" secondAttribute="centerX" id="EiA-sF-ajk"/>
-                                    <constraint firstItem="paD-sB-cxH" firstAttribute="top" secondItem="E7P-Pj-g6W" secondAttribute="top" id="INM-hy-VHH"/>
-                                    <constraint firstItem="SEU-Hl-xJc" firstAttribute="width" secondItem="E7P-Pj-g6W" secondAttribute="width" id="Pmg-nh-VYK"/>
-                                    <constraint firstAttribute="bottom" secondItem="R7F-xv-3o3" secondAttribute="bottom" constant="60" id="aAU-1B-F7r"/>
-                                    <constraint firstAttribute="bottom" secondItem="SEU-Hl-xJc" secondAttribute="bottom" id="dEp-LM-2op"/>
-                                    <constraint firstAttribute="centerX" secondItem="SEU-Hl-xJc" secondAttribute="centerX" id="ndP-Dz-Krd"/>
-                                    <constraint firstItem="paD-sB-cxH" firstAttribute="width" secondItem="E7P-Pj-g6W" secondAttribute="width" id="wJv-Hn-28N"/>
-                                    <constraint firstItem="R7F-xv-3o3" firstAttribute="leading" secondItem="E7P-Pj-g6W" secondAttribute="leading" constant="10" id="xux-ud-bwy"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="44" width="375" height="579"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <searchBar contentMode="redraw" text="Portland, OR breweries" prompt="Enter a place or address to find" placeholder="Place" translatesAutoresizingMaskIntoConstraints="NO" id="paD-sB-cxH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XGU-IC-eHj"/>
+                                </connections>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-Hl-xJc">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hyo-cf-WcD"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" image="prev32" id="5EB-hA-TCB" userLabel="Prev Btn">
+                                        <connections>
+                                            <action selector="prevBtnClicked:" destination="BYZ-38-t0r" id="BXn-Bp-X3H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NbP-39-sec"/>
+                                    <barButtonItem enabled="NO" image="next32" id="gTd-z5-TGA" userLabel="Next Btn">
+                                        <connections>
+                                            <action selector="nextBtnClicked:" destination="BYZ-38-t0r" id="5F6-TO-ecc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tt-Kh-iQs" userLabel="Directions Label">
+                                <rect key="frame" x="50" y="634" width="275" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qbQ-ul-nVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5ZR-nW-a7D"/>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5aS-EJ-9pe"/>
                             <constraint firstAttribute="centerX" secondItem="E7P-Pj-g6W" secondAttribute="centerX" id="Duo-PS-m5r"/>
                             <constraint firstAttribute="centerY" secondItem="E7P-Pj-g6W" secondAttribute="centerY" id="NpZ-nZ-ECk"/>
                             <constraint firstAttribute="width" secondItem="E7P-Pj-g6W" secondAttribute="width" id="QD7-zb-Nfj"/>
-                            <constraint firstAttribute="height" secondItem="E7P-Pj-g6W" secondAttribute="height" id="imE-cV-RyY"/>
+                            <constraint firstItem="paD-sB-cxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XL3-hb-FLw"/>
+                            <constraint firstItem="7Tt-Kh-iQs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTY-iY-v2t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SEU-Hl-xJc" secondAttribute="bottom" id="dqq-Cu-X3I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Tt-Kh-iQs" secondAttribute="bottom" constant="12" id="nob-UM-0GQ"/>
+                            <constraint firstItem="7Tt-Kh-iQs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="nsY-Tx-9ze"/>
+                            <constraint firstItem="SEU-Hl-xJc" firstAttribute="top" secondItem="E7P-Pj-g6W" secondAttribute="bottom" id="pZU-bu-d0m"/>
+                            <constraint firstItem="SEU-Hl-xJc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="tFT-Dg-DxC"/>
+                            <constraint firstItem="SEU-Hl-xJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="toA-vE-wcM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Tt-Kh-iQs" secondAttribute="trailing" constant="34" id="wMg-Rd-b8G"/>
                         </constraints>
                     </view>
                     <connections>
@@ -96,11 +88,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="133"/>
+            <point key="canvasLocation" x="181.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ArcGIS.bundle/esri.png" width="280" height="280"/>
         <image name="next32" width="32" height="32"/>
         <image name="prev32" width="32" height="32"/>
     </resources>
